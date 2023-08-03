@@ -3,4 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
+
+    <servlet>
+        <servlet-name>helloServlet</servlet-name>
+        <servlet-class>com.danilermolenko.javaee.project.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloServlet</servlet-name>
+        <url-pattern>/hello-servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>JspView</servlet-name>
+        <jsp-file>/someview.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JspView</servlet-name>
+        <url-pattern>/hello-servlet-jsp</url-pattern>
+    </servlet-mapping>
 </web-app>
