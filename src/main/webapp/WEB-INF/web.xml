@@ -41,6 +41,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>libraryServlet</servlet-name>
+        <servlet-class>com.danilermolenko.javaee.project.LibraryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>libraryServlet</servlet-name>
+        <url-pattern>/libraryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>JspView</servlet-name>
         <jsp-file>/someview.jsp</jsp-file>
     </servlet>
