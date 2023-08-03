@@ -14,6 +14,33 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>setCookies</servlet-name>
+        <servlet-class>com.danilermolenko.javaee.project.SetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>setCookies</servlet-name>
+        <url-pattern>/setCookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getCookies</servlet-name>
+        <servlet-class>com.danilermolenko.javaee.project.GetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getCookies</servlet-name>
+        <url-pattern>/getCookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteCookies</servlet-name>
+        <servlet-class>com.danilermolenko.javaee.project.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteCookies</servlet-name>
+        <url-pattern>/deleteCookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>JspView</servlet-name>
         <jsp-file>/someview.jsp</jsp-file>
     </servlet>
@@ -21,4 +48,5 @@
         <servlet-name>JspView</servlet-name>
         <url-pattern>/hello-servlet-jsp</url-pattern>
     </servlet-mapping>
+
 </web-app>
