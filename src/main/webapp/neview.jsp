@@ -1,4 +1,5 @@
-<%--
+<%@ page import="java.util.Map" %>
+<%@ page import="com.danilermolenko.javaee.project.myclasses.Cart" %><%--
   Created by IntelliJ IDEA.
   User: zer0c
   Date: 03.08.2023
@@ -11,6 +12,14 @@
     <title>Title</title>
 </head>
 <body>
+
+<% Cart cart = (Cart) session.getAttribute("cart");
+String str = "";
+    for(Map.Entry<String, Integer> item: cart.getCartMap().entrySet()){
+        str += item.getKey() + ": " + item.getValue() + ", ";
+    }
+%>
+<%= str %>
 
 </body>
 </html>
